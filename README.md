@@ -8,5 +8,5 @@ This project explores the foundations of interface communication for the Atmega3
 ## Build Instructions
 After isntalling the avr toolchain, just run build.bat. It should produce a build folder with the PC program executable and the Arduino code. It will also flash the program to the board. Make sure the Arduino is plugged in to your PC via USB.
 ``` CMD
-build.bat -port COM5 -avr C:\Keagan\Programs\avr8-gnu-toolchain-win32_x86_64\
+build.bat -port COM5 -avr C:\avr-toolchain\avr8-gnu-toolchain-win32_x86_64\
 ```
