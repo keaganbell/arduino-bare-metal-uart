@@ -1,0 +1,43 @@
+version(1);
+
+project_name = "UART";
+
+patterns = {
+	"*.c",
+	"*.cpp",
+	"*.h",
+	"*.asm",
+	"*.glsl",
+	"*.bat",
+	"*.sh",
+	"*.4coder",
+	"*.txt",
+	"*.md",
+};
+
+blacklist_patterns = {
+	".*",
+};
+
+paths = {
+	{ .path = ".", .recursive = true, .relative = true, },
+};
+
+load_paths = {
+	{
+		paths, .os = "win",
+	}
+};
+
+command_list = {
+	{ 
+		.name = "build_and_flash",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = true,
+		.cmd = { {"build.bat -port COM5 -avr C:\\Keagan\\Programs\\avr8-gnu-toolchain-win32_x86_64\\", .os = "win"} },
+	},
+};
+
+fkey_command[5] = "build_and_flash";
