@@ -1,5 +1,5 @@
 # Overview
-This example expands on the blink example to make the LED turn on and off with a non-blocking timer. It puts Timer/Counter Control Register 0 in *Clear Timer on Compare* (CTC) mode. When the clock value "overflows", an interrupt is triggered prompting our program in increment the milliseconds counter.
+This example expands on the blink example to make the LED turn on and off with a non-blocking timer. It puts Timer/Counter Control Register 0 in *Clear Timer on Compare* (CTC) mode. When the clock value "overflows", an interrupt is triggered prompting our program to increment the milliseconds counter.
 
 This timer is used similarly to the Arduino API function millis(). Now the program can just check the counter and power the LED as necessary instead of blocking the program to waste CPU cycles to wait for the next time to toggle the LED.
 
