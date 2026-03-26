@@ -16,6 +16,7 @@ To clean build artifacts, just delete the folder and re-run the build script wit
 
 ### Build Flags
 The build process is setup to build just a single translation unit. The main.c file should just include all the code files .h and .c alike.
--  -tar *target*
-specify which example to build and flash. The script will search for a folder in .\code\ named *target* and try to compile a file named *target_main.c*
+- -tar *target*: specify which example to build and flash. The script will search for a folder in .\code\ named *target* and try to compile a file named *target_main.c*
+- -port *port_name*: specify which port the Arduino is plugged into. On windows, you can check the Device Manager for Ports with connected devices or use the cmd *mode* in a cmd prompt.
+- -avr *\filepath\*: specify the path to the avr toolchain. The specified path should contain a \bin\ folder with the avr-gcc.exe, avr-objcopy.exe, and avrdude.exe executables.
  
