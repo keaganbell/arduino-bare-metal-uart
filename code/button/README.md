@@ -1,6 +1,6 @@
 # Overview
-This example expands on the PWM example. A button is connected to pin 7 on port D which corresponds to Arduino gpio pin 7.
-Pin 7 is initialized to input mode and set to "pull up" so that it is considered *active* when the button is pressed and the pin is pulled low (to ground).
+This example expands on the PWM example. Pressing the button toggles the pulsing animation of the LED. Pressing the button once freezes the LED's brightness, and pressing it again resumes the pulsing animation.
+The pin connected to the button is initialized to input mode and set to "pull up." That way when the button is pressed and the signal is driven towards ground, the pin is set to active (i.e., active *low*).
 The button is updated every 5 ms to avoid "bouncing." The delay can be adjusted in code by defining the BUTTON_LATENCY_MS definition.
 
 To run the program, be sure to edit the parameters for your setup.
