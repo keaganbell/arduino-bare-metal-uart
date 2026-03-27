@@ -9,3 +9,5 @@ build.bat -tar button -port COM5 -avr C:\avr-toolchain\avr8-gnu-toolchain-win32_
 ```
 Note that the output port is PORTB1. So you need an LED attached to gpio pin 9 to see the results.
 Input is observed on PIND7. So the button should be connected to gpio pin 7. The output of the button goes to ground.
+
+![Button Example Schematic](button_led_pwm_schematic.png)
