@@ -9,3 +9,5 @@ build.bat -tar pwm -port COM5 -avr C:\avr-toolchain\avr8-gnu-toolchain-win32_x86
 ```
 Note that the output port is now PORTB1. So you need an LED attached to gpio pin 9 to see the results.
 You can also edit the code and change LED_PULSE_TIME_MS to change the speed at which the LED pulses.
+
+[Shift Example Schematic](avr_shift_schematic.png)
