@@ -8,3 +8,5 @@ The setup is more complicated compared to previous examples so refer to the sche
 ```CMD
 build.bat -tar shift -port COM5 -avr C:\avr-toolchain\avr8-gnu-toolchain-win32_x86_64\
 ```
+
+![Shift Example Schematic](avr_shift_schematic.png)
